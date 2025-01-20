@@ -40,6 +40,7 @@ export const List = {
     newLi.appendChild(divToDoTrash);
     
     ul.appendChild(newLi);
+
     },
 
     getLiAmount() {
@@ -48,7 +49,16 @@ export const List = {
     },
 
     getLiAmountDone(){
+        const elements = document.querySelectorAll('.to-do-items');        
         
+        elements.forEach((e) => {
+            const item = e.querySelector('.check-item')
+            const taskDone = []
+            if (item.checked) {
+                taskDone.push(item)
+            }
+            console.log("🚀 ~ elements.forEach ~ e:", taskDone)
+        })
     },
     
     removeItem(task) {
@@ -68,6 +78,9 @@ export const List = {
             p.style.textDecoration = "none"
             p.style.color = '#F2F2F2'
         }
+
+        
+    this.getLiAmountDone();
         
     }
 }

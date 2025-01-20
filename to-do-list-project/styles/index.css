@@ -134,6 +134,19 @@
     color: var(--gray-200);
 }
 
+.to-do-amount-done {
+    width: 25px;
+    height: 19px;
+    border-radius: 999px;
+    padding: 2px 8px;
+    gap: 10px;
+    background-color: var(--gray-400);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14.52px;
+    color: var(--gray-200);
+}
+
 .to-do-body-list {
     display: flex;
     flex-direction: column;
