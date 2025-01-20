@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do list</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+
+    <script type="module" src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="./img/Logo.png" alt="logo do To Do list" class="logo">
+        </header>
+        <form class="form-area">
+            <input 
+                id="input-form-id"
+                type="text"
+                required
+                name="task"
+                class="input-form"
+                placeholder="Adicione uma nova tarefa"
+            />
+            <button type="submit" class="button-form">
+                <span>Criar</span>
+                <img src="./img/plus.png" class="plus-button" alt="sinal de +">
+            </button>
+        </form>
+        <div class="to-do-content">
+            <div class="to-do-header">
+                <div>
+                    <span class="created">Tarefas criadas</span>
+                    <span class="to-do-amount">0</span>
+                </div>
+                <div>
+                    <span class="finished">Concluídas</span>
+                    <span class="to-do-amount">0</span>
+                </div>
+            </div>
+            <!-- <div class="to-do-body-list">
+                <img src="./img/Clipboard.png" alt="incone de clipboard" class="clipboard">
+                <div class="msg-content">
+                    <p class="msg">
+                        Você ainda não tem tarefas cadastradas
+                    </p>
+                    <p class="msg">
+                        Crie tarefas e organize seus items a fazer
+                    </p>
+                </div>
+            </div> -->
+            <div class="to-do-body-items">
+                <ul class="to-do-list">
+                    <!-- <li class="to-do-items">
+                        <div class="to-do-check">
+                            <input type="radio" class="check-item">
+                        </div>
+                        <div class="to-do-task">
+                            <p class="task-text">aqui vais ser a lista de tarefas</p>
+                        </div>
+                        <div class="to-do-trash">
+                            <img src="./img/Layer-2.png" alt="icone de lixeira" class="icon-trash">
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

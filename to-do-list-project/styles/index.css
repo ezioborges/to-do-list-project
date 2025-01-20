@@ -1,0 +1,238 @@
+:root {
+    --purple: #8284FA;
+    --purple-dark: #5E60CE;
+    --blue: #4EA8DE;
+    --blue-dark: #1E6F9F;
+    --gray-700: #0D0D0D;
+    --gray-600: #1A1A1A;
+    --gray-500: #262626;
+    --gray-400: #333333;
+    --gray-300: #808080;
+    --gray-200: #D9D9D9;
+    --gray-100: #F2F2F2;
+    --danger: #E25858;
+}
+
+.container {
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin: auto;
+    background-color: var(--gray-600);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: var(--gray-700);
+}
+
+.logo {
+    width: 126px;
+    height: 48px;
+    
+}
+
+.form-area {
+    display: flex;
+    width: 51.11%; 
+    min-height: 54px;
+    position: absolute;
+    top: 173px;
+    left: 24.44%;
+    gap: 8px;
+}
+
+.input-form {
+    width: 86.68%;
+    min-height: 54%;
+    border-radius: 8px;
+    border: 1px solid var(--gray-700);
+    background-color: var(--gray-500);
+    padding: 16px;
+    gap: 8px;
+    color: var(--gray-300);
+}
+
+.input-form:focus {
+    outline: none;
+    border: 1px solid var(--purple-dark);
+    color: var(--gray-100);
+}
+
+.button-form {
+    min-width: 12.22%;
+    min-height: 52%;
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+    gap: 8px;
+    background-color: var(--blue-dark);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.6px;
+    color: var(--gray-100);
+}
+
+.button-form:hover {
+    background-color: #175477;
+    transition: .3s;
+}
+
+.plus-button {
+    width: 15.97px;
+    height: 15.97px;
+    position: relative;
+    top: 1.5px;
+    margin-left: 5px;
+}
+
+.to-do-content {
+    width: 51.11%;
+    min-height: 287px;
+    position: absolute;
+    top: 291px;
+    left: 24.44%;
+    gap: 24px;
+}
+
+.to-do-header {
+    display: flex;
+    justify-content: space-between;
+    width: 99.5%;
+    min-width: 19px;
+    padding: 3px;
+    margin-bottom: 15px;
+}
+
+.created {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.94px;
+    color: var(--blue);
+}
+
+.finished {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16.94px;
+    color: var(--purple);
+}
+
+.to-do-amount {
+    width: 25px;
+    height: 19px;
+    border-radius: 999px;
+    padding: 2px 8px;
+    gap: 10px;
+    background-color: var(--gray-400);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14.52px;
+    color: var(--gray-200);
+}
+
+.to-do-body-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--gray-400);
+    height: 244px;
+    border-radius: 8px;
+    padding: 64px 24px;
+    gap: 16px;
+}
+
+.clipboard {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.msg-content {
+    width: 93.48%;
+    height: 2.75rem;
+}
+
+.msg {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    place-self: center;
+    color: var(--gray-300);
+}
+
+.msg:nth-child(2) {
+    font-weight: 400;
+}
+
+.to-do-body-items {
+    width: 100%;
+    min-height: 25.5rem;
+}
+
+.to-do-items {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 4.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--gray-500);
+    border: 0.063rem solid var(--gray-400);
+}
+
+.to-do-check {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check-item {
+    appearance: none;
+    width: 1.091rem;
+    height: 1.091rem;
+    margin-top: 0.204rem;
+    margin-left: 0.204rem;
+    border-radius: 50%;
+    border: 2px solid var(--blue);
+    cursor: pointer;
+}
+
+input:checked {
+    border: none;
+    background-color: var(--purple-dark);
+    background-repeat: no-repeat;
+    background-image: url('./../img/Vector.png');
+    background-position: center;
+}
+
+.to-do-task {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.to-do-trash {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.icon-trash {
+    width: .9rem;
+}
+
+.icon-trash:hover {
+    filter: opacity(0.9) drop-shadow(0 0 0 #E25858);
+    cursor: pointer;
+}
