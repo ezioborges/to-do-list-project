@@ -170,7 +170,9 @@
 
 .to-do-body-items {
     width: 100%;
-    min-height: 25.5rem;
+    height: 25.5rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .to-do-items {
@@ -182,6 +184,7 @@
     border-radius: 0.5rem;
     background-color: var(--gray-500);
     border: 0.063rem solid var(--gray-400);
+    margin-bottom: .5rem;
 }
 
 .to-do-check {

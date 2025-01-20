@@ -20,7 +20,8 @@ const createList = (task) => {
     
     const inputCheckItem = document.createElement('input');
     inputCheckItem.classList.add('check-item');
-    inputCheckItem.type = "radio";
+    inputCheckItem.type = "checkbox";
+    inputCheckItem.onclick = () => taskFinish(newLi)
 
     const divToDoTask = document.createElement('div');
     divToDoTask.classList.add('to-do-task');    
@@ -58,6 +59,20 @@ const removeItem = (task) => {
     ul.removeChild(task)
     const items = getLiAmount();
     spanAmount.textContent = items.length
+}
+
+const taskFinish = (li) => {
+    const p = li.querySelector('.task-text');
+    const inputCheck = li.querySelector('.check-item');
+
+    if (inputCheck.checked) {
+        p.style.textDecoration = "line-through"
+        p.style.color = '#808080'
+    } else {
+        p.style.textDecoration = "none"
+        p.style.color = '#F2F2F2'
+    }
+    
 }
 
 
